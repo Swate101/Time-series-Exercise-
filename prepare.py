@@ -63,7 +63,7 @@ def clean_store(df):
 
     # drop unnecessary columns
     df = df.drop(
-        columns=["Unnamed: 0_x", "Unnamed: 0_y", "Unnamed: 0", "store", "item"]
+        columns=[  "store", "item"]
     )  # Dropping not needed col
 
     # reorder the columns

@@ -18,6 +18,26 @@ import sklearn.preprocessing
 #This function reads in the zillow data from the Codeup 
     #Database connection made from get_connection
     #and returns a pandas DataFrame with all columns in tow, needed to start this proccess
+    
+    
+# Also this has Acquire_stores and the get_germany_data Functions 
+    
+    
+    
+    
+def get_germany_data():
+    '''
+    This function gets Open Power Systems Data for Germany,
+    reads data as a csv, and 
+    
+    returns the data in a pandas dataframe
+    '''
+
+    url = 'https://raw.githubusercontent.com/jenfly/opsd/master/opsd_germany_daily.csv'
+
+    germany_data = pd.read_csv(url)
+    
+    return germany_data
 
 
 def acquire_stores():
